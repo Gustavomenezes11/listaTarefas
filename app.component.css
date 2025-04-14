@@ -1,0 +1,73 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  .adicionar-tarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  input[type="text"]:hover{
+      opacity: 1;
+  }
+  #AdicionarTarefa {
+    padding: 8px 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #AdicionarTarefa:hover {
+    background-color: green;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .todo-list li.completed span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .deletar-tarefa {
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .deletar-tarefa:hover {
+    background-color: red;
+  }

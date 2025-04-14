@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Lista de Tarefas</h1>
+
+  <!--Campo de entrada para informar a tarefa -->
+  <div class="adicionar-tarefa">
+    <input id="campoPesquisa" type="text" [(ngModel)]="newTodoTitle" placeholder="Digite uma nova tarefa" minlength="2" (keyup.enter)="addTodo()"/>
+    <button id="AdicionarTarefa" (click)="addTodo()">Adicionar</button>
+  </div>
+
+  <!-- Lista de tarefas na tela do usuario-->
+  <ul class="todo-list">
+    <li *ngFor="let todo of todos" [class.completed]="todo.completed">
+      <input type="checkbox" [checked]="todo.completed" (change)="toggleTodo(todo)"/>
+      <span>{{ todo.title }}</span>
+      <button class="deletar-tarefa" (click)="deleteTodo(todo.id!)">Excluir</button>
+    </li>
+  </ul>
+</div>
